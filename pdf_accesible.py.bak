@@ -1,0 +1,693 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Script para hacer PDFs accesibles mediante OCR.
+Convierte PDFs basados en imágenes a PDFs con texto seleccionable y accesible.
+"""
+
+import os
+import sys
+import argparse
+import logging
+from pathlib import Path
+import tempfile
+from typing import List, Tuple, Optional, Dict, Any
+from datetime import datetime
+import io
+
+# Importaciones de bibliotecas externas
+try:
+    from pdf2image import convert_from_path
+    import pytesseract
+    from PIL import Image
+    import PyPDF2
+    from PyPDF2 import PdfReader, PdfWriter
+    import pikepdf
+    from pikepdf import Pdf, Page, Dictionary, Name, Array
+    import xml.etree.ElementTree as ET
+    from bs4 import BeautifulSoup
+    import re
+except ImportError as e:
+    print(f"Error: Falta una biblioteca necesaria: {e}")
+    print("Asegúrate de instalar todas las dependencias: pdf2image, pytesseract, Pillow, PyPDF2, pikepdf")
+    sys.exit(1)
+
+# Configuración de logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
+logger = logging.getLogger(__name__)
+
+# Constantes de configuración
+TESSERACT_CMD = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+DPI = 300  # Resolución para conversión de PDF a imagen
+OCR_LANG = 'spa'  # Idioma para OCR (español)
+TEMP_DIR = tempfile.gettempdir()  # Directorio temporal para archivos intermedios
+
+# Asegurarse de que Tesseract esté configurado correctamente
+pytesseract.pytesseract.tesseract_cmd = TESSERACT_CMD
+
+
+def convertir_pdf_a_imagenes(ruta_pdf: str, dpi: int = DPI) -> List[Image.Image]:
+    """
+    Convierte un archivo PDF a una lista de imágenes.
+    
+    Args:
+        ruta_pdf: Ruta al archivo PDF
+        dpi: Resolución de las imágenes (puntos por pulgada)
+        
+    Returns:
+        Lista de objetos imagen (PIL.Image)
+    """
+    logger.info(f"Convirtiendo PDF a imágenes (DPI: {dpi}): {ruta_pdf}")
+    try:
+        # Convertir el PDF a imágenes usando pdf2image
+        imagenes = convert_from_path(ruta_pdf, dpi=dpi)
+        logger.info(f"Conversión completada: {len(imagenes)} páginas encontradas")
+        return imagenes
+    except Exception as e:
+        logger.error(f"Error al convertir PDF a imágenes: {e}")
+        raise
+
+
+def aplicar_ocr_a_imagenes(imagenes: List[Image.Image], idioma: str = OCR_LANG) -> List[Dict[str, Any]]:
+    """
+    Aplica OCR a una lista de imágenes para extraer texto estructurado con información de posición.
+    
+    Args:
+        imagenes: Lista de imágenes (objetos PIL.Image)
+        idioma: Código de idioma para OCR (por defecto 'spa' para español)
+        
+    Returns:
+        Lista de datos estructurados con texto y posiciones, uno por imagen/página
+    """
+    logger.info(f"Aplicando OCR con HOCR (idioma: {idioma}) a {len(imagenes)} imágenes")
+    resultados = []
+    
+    for i, imagen in enumerate(imagenes):
+        try:
+            logger.info(f"Procesando página {i+1}/{len(imagenes)}")
+            # Obtener el resultado HOCR (HTML + OCR)
+            hocr_text = pytesseract.image_to_pdf_or_hocr(
+                imagen, 
+                extension='hocr',
+                lang=idioma
+            )
+            
+            # Convertir bytes a string
+            hocr_str = hocr_text.decode('utf-8')
+            
+            # Parseamos el HOCR usando BeautifulSoup
+            soup = BeautifulSoup(hocr_str, 'html.parser')
+            
+            pagina_data = {
+                'width': imagen.width,
+                'height': imagen.height,
+                'blocks': []
+            }
+            
+            # Extraer párrafos (p) del HOCR
+            for p_idx, ocr_p in enumerate(soup.find_all('p', class_='ocr_par')):
+                # Obtener el bounding box del párrafo
+                p_title = ocr_p.get('title', '')
+                p_bbox_match = re.search(r'bbox (\d+) (\d+) (\d+) (\d+)', p_title)
+                
+                if p_bbox_match:
+                    p_x1, p_y1, p_x2, p_y2 = map(int, p_bbox_match.groups())
+                    p_block = {
+                        'type': 'paragraph',
+                        'id': f'p_{i}_{p_idx}',
+                        'bbox': (p_x1, p_y1, p_x2, p_y2),
+                        'lines': []
+                    }
+                    
+                    # Extraer líneas dentro del párrafo
+                    for l_idx, ocr_line in enumerate(ocr_p.find_all('span', class_='ocr_line')):
+                        l_title = ocr_line.get('title', '')
+                        l_bbox_match = re.search(r'bbox (\d+) (\d+) (\d+) (\d+)', l_title)
+                        
+                        if l_bbox_match:
+                            l_x1, l_y1, l_x2, l_y2 = map(int, l_bbox_match.groups())
+                            line_text = ' '.join([w.get_text() for w in ocr_line.find_all('span', class_='ocrx_word')])
+                            
+                            # Datos de cada palabra para posicionamiento preciso
+                            words = []
+                            for w_idx, word in enumerate(ocr_line.find_all('span', class_='ocrx_word')):
+                                w_title = word.get('title', '')
+                                w_bbox_match = re.search(r'bbox (\d+) (\d+) (\d+) (\d+)', w_title)
+                                
+                                if w_bbox_match:
+                                    w_x1, w_y1, w_x2, w_y2 = map(int, w_bbox_match.groups())
+                                    words.append({
+                                        'text': word.get_text(),
+                                        'bbox': (w_x1, w_y1, w_x2, w_y2)
+                                    })
+                            
+                            p_block['lines'].append({
+                                'id': f'l_{i}_{p_idx}_{l_idx}',
+                                'bbox': (l_x1, l_y1, l_x2, l_y2),
+                                'text': line_text,
+                                'words': words
+                            })
+                    
+                    pagina_data['blocks'].append(p_block)
+            
+            resultados.append(pagina_data)
+            logger.info(f"Página {i+1}: {len(pagina_data['blocks'])} bloques de texto encontrados")
+            
+        except Exception as e:
+            logger.error(f"Error en OCR para página {i+1}: {e}")
+            # Añadir una estructura vacía en caso de error
+            resultados.append({
+                'width': imagen.width if imagen else 0,
+                'height': imagen.height if imagen else 0,
+                'blocks': []
+            })
+    
+    return resultados
+
+
+def crear_pdf_con_capa_texto(
+    imagenes: List[Image.Image], 
+    datos_ocr: List[Dict[str, Any]],
+    ruta_salida: str
+) -> str:
+    """
+    Crea un nuevo PDF accesible con estructura de documento según estándares PDF/UA
+    usando pikepdf.
+    
+    Args:
+        imagenes: Lista de imágenes (objetos PIL.Image)
+        datos_ocr: Lista de datos estructurados con texto y posiciones
+        ruta_salida: Ruta donde guardar el PDF resultante
+        
+    Returns:
+        Ruta al PDF temporal con capas de texto y estructura accesible
+    """
+    logger.info(f"Creando PDF accesible con estructura PDF/UA: {ruta_salida}")
+    
+    # Importar Helvetica para fuentes
+    fuente_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Helvetica.ttf")
+    fuente_cargada = False
+    
+    try:
+        from fontTools.ttLib import TTFont
+        if os.path.exists(fuente_path):
+            font = TTFont(fuente_path)
+            fuente_cargada = True
+        else:
+            logger.warning(f"No se pudo cargar la fuente Helvetica.ttf, usando fuentes predeterminadas")
+    except Exception as e:
+        logger.warning(f"Error al cargar fuentes: {e}")
+    
+    # Crear un PDF temporal para cada página con su estructura accesible
+    pdf_temp_paths = []
+    
+    for i, (imagen, pagina_data) in enumerate(zip(imagenes, datos_ocr)):
+        try:
+            # Crear un PDF temporal para esta página
+            temp_pdf_path = os.path.join(TEMP_DIR, f"temp_page_{i}.pdf")
+            
+            # Obtener dimensiones de la imagen
+            width, height = imagen.size
+            
+            # Preparar imagen para pikepdf
+            img_temp_path = os.path.join(TEMP_DIR, f"temp_img_{i}.png")
+            imagen.save(img_temp_path, "PNG")
+            
+            # Crear un PDF accesible con pikepdf
+            pdf = Pdf.new()
+            
+            # Configurar el catálogo del documento para PDF/UA
+            pdf.Root.MarkInfo = Dictionary(
+                Marked=True,
+                Suspects=False,
+                UserProperties=False
+            )
+            
+            # Configurar idioma (importante para accesibilidad)
+            pdf.Root.Lang = "es-ES"
+            
+            # Configurar estructura de etiquetas
+            struct_tree_root = Dictionary()
+            struct_tree_root.Type = Name.StructTreeRoot
+            struct_tree_root.ParentTree = Dictionary()
+            struct_tree_root.ParentTree.Nums = Array()
+            
+            # Crear diccionario para roles de estructura
+            role_map = Dictionary()
+            role_map.P = Name.P
+            role_map.Document = Name.Document
+            role_map.Figure = Name.Figure
+            
+            # Asignar mapa de roles
+            struct_tree_root.RoleMap = role_map
+            
+            # Crear elemento Document como raíz del árbol de estructura
+            doc_struct_elem = Dictionary()
+            doc_struct_elem.Type = Name.StructElem
+            doc_struct_elem.S = Name.Document
+            doc_struct_elem.P = struct_tree_root
+            doc_struct_elem.K = Array()
+            
+            # Asignar el árbol de estructura al documento
+            struct_tree_root.K = Array([doc_struct_elem])
+            pdf.Root.StructTreeRoot = struct_tree_root
+            
+            # Crear página con pikepdf
+            page = pdf.make_page(
+                media_box=(0, 0, width, height)
+            )
+            
+            # Crear un contenedor para el contenido de la página
+            content_stream = io.BytesIO()
+            
+            # Cargar la imagen en el PDF como objeto XObject
+            with open(img_temp_path, 'rb') as img_file:
+                img_data = img_file.read()
+                
+            image_xobject = pdf.make_stream(
+                img_data,
+                Dictionary(
+                    Type=Name.XObject,
+                    Subtype=Name.Image,
+                    Width=width,
+                    Height=height,
+                    ColorSpace=Name.DeviceRGB,
+                    BitsPerComponent=8,
+                    Filter=Name.DCTDecode
+                )
+            )
+            
+            # Si hay bloques de texto, procesarlos y añadirlos al PDF
+            if pagina_data['blocks']:
+                # Operadores iniciales para el stream de contenido
+                content_stream.write(f"q {width} 0 0 {height} 0 0 cm /Im0 Do Q\n".encode('latin-1'))
+                
+                # Iniciar contenido de texto
+                content_stream.write(b"BT\n")
+                
+                # Iterar por cada bloque de texto (párrafos)
+                for block_idx, block in enumerate(pagina_data['blocks']):
+                    # Crear elemento de estructura para el párrafo
+                    paragraph_elem = Dictionary()
+                    paragraph_elem.Type = Name.StructElem
+                    paragraph_elem.S = Name.P
+                    paragraph_elem.P = doc_struct_elem
+                    paragraph_elem.ID = f"p_{i}_{block_idx}"
+                    paragraph_elem.K = Array()
+                    
+                    # Añadir el elemento de párrafo al documento
+                    doc_struct_elem.K.append(paragraph_elem)
+                    
+                    # Procesar cada línea del bloque
+                    for line_idx, line in enumerate(block['lines']):
+                        line_bbox = line['bbox']
+                        
+                        # Posicionar el cursor para esta línea (origen es esquina inferior izquierda)
+                        text_x = line_bbox[0]
+                        # En PDFs, el eje Y va de abajo hacia arriba, diferente a imágenes
+                        text_y = height - line_bbox[3]  # Usar la parte superior de la línea
+                        
+                        # Seleccionar fuente y tamaño
+                        font_size = min(12, line_bbox[3] - line_bbox[1])  # Estimar tamaño de fuente
+                        content_stream.write(f"/F1 {font_size} Tf\n".encode('latin-1'))
+                        
+                        # Posicionar para esta línea
+                        content_stream.write(f"{text_x} {text_y} Td\n".encode('latin-1'))
+                        
+                        # Procesar palabras individuales para precisión
+                        for word_idx, word in enumerate(line['words']):
+                            word_text = word['text'].replace("\\", "\\\\").replace("(", "\\(").replace(")", "\\)")
+                            
+                            # Mostrar el texto
+                            content_stream.write(f"({word_text}) Tj\n".encode('latin-1'))
+                            
+                            # Si no es la última palabra, añadir espacio
+                            if word_idx < len(line['words']) - 1:
+                                next_word = line['words'][word_idx + 1]
+                                space_width = next_word['bbox'][0] - word['bbox'][2]
+                                if space_width > 0:
+                                    content_stream.write(f"{space_width} 0 Td\n".encode('latin-1'))
+                        
+                        # Mover a una nueva línea si no es la última
+                        if line_idx < len(block['lines']) - 1:
+                            content_stream.write(f"0 {-font_size * 1.2} Td\n".encode('latin-1'))
+                    
+                # Finalizar el stream de contenido de texto
+                content_stream.write(b"ET\n")
+                
+                # Asignar el contenido a la página
+                page
+    
+    
+    # Crear un PDF combinado con todas las páginas
+    pdf_combinado_path = os.path.join(TEMP_DIR, "combined_pdf_with_text.pdf")
+    
+    try:
+        # Utilizar pikepdf para combinar los PDFs temporales
+        combined_pdf = Pdf.new()
+        
+        # Conservar metadatos y estructura del PDF/UA
+        combined_pdf.Root.MarkInfo = Dictionary(
+            Marked=True,
+            Suspects=False,
+            UserProperties=False
+        )
+        combined_pdf.Root.Lang = "es-ES"
+        
+        # Configurar estructura de etiquetas global
+        combined_struct_tree = Dictionary()
+        combined_struct_tree.Type = Name.StructTreeRoot
+        combined_struct_tree.ParentTree = Dictionary()
+        combined_struct_tree.ParentTree.Nums = Array()
+        
+        # Configurar mapa de roles
+        role_map = Dictionary()
+        role_map.P = Name.P
+        role_map.Document = Name.Document
+        role_map.Figure = Name.Figure
+        combined_struct_tree.RoleMap = role_map
+        
+        # Crear elemento Document como raíz del árbol de estructura
+        doc_struct_elem = Dictionary()
+        doc_struct_elem.Type = Name.StructElem
+        doc_struct_elem.S = Name.Document
+        doc_struct_elem.P = combined_struct_tree
+        doc_struct_elem.K = Array()
+        
+        # Asignar el árbol de estructura al documento
+        combined_struct_tree.K = Array([doc_struct_elem])
+        combined_pdf.Root.StructTreeRoot = combined_struct_tree
+        
+        # Combinar páginas de PDFs temporales
+        page_count = 0
+        for temp_pdf_path in pdf_temp_paths:
+            if os.path.exists(temp_pdf_path):
+                try:
+                    with Pdf.open(temp_pdf_path) as temp_pdf:
+                        # Copiar cada página al PDF combinado
+                        for page in temp_pdf.pages:
+                            combined_pdf.pages.append(page)
+                            
+                            # Actualizar referencias de estructura si existen
+                            if hasattr(page, 'StructParents'):
+                                page.StructParents = page_count
+                                
+                            page_count += 1
+                except Exception as e:
+                    logger.error(f"Error al combinar página de {temp_pdf_path}: {e}")
+        
+        # Guardar el PDF combinado con compresión
+        combined_pdf.save(pdf_combinado_path, 
+                          compress_streams=True,
+                          object_stream_mode=pikepdf.ObjectStreamMode.generate)
+        
+        logger.info(f"PDF combinado creado con éxito: {pdf_combinado_path}")
+        
+        # Limpiar PDFs temporales
+        for pdf_path in pdf_temp_paths:
+            if os.path.exists(pdf_path):
+                try:
+                    os.remove(pdf_path)
+                except Exception as e:
+                    logger.warning(f"Error al eliminar archivo temporal {pdf_path}: {e}")
+        return pdf_combinado_path
+        
+    except Exception as e:
+        logger.error(f"Error al combinar PDFs: {e}")
+        # En caso de error, devolvemos el primer PDF temporal si existe
+        if pdf_temp_paths and os.path.exists(pdf_temp_paths[0]):
+            return pdf_temp_paths[0]
+        raise
+
+def añadir_metadatos_accesibilidad(
+    pdf_path: str,
+    pdf_salida: str,
+    titulo: str = None,
+    autor: str = None,
+    asunto: str = None
+) -> None:
+    """
+    Añade metadatos de accesibilidad al PDF usando pikepdf.
+    
+    Args:
+        pdf_path: Ruta al PDF de entrada
+        pdf_salida: Ruta donde se guardará el PDF con metadatos
+        titulo: Título del documento (opcional)
+        autor: Autor del documento (opcional)
+        asunto: Asunto del documento (opcional)
+    """
+    try:
+        # Fecha actual para metadatos
+        fecha_actual = datetime.now()
+        fecha_pdf = fecha_actual.strftime("D:%Y%m%d%H%M%S+00'00'")
+        fecha_xmp = fecha_actual.strftime("%Y-%m-%dT%H:%M:%S")
+        
+        # Abrir el PDF con pikepdf
+        with pikepdf.open(pdf_path) as pdf:
+            # Configurar metadatos de documento
+            with pdf.open_metadata() as meta:
+                # Metadatos básicos de Dublin Core
+                meta["dc:format"] = "application/pdf"
+                meta["dc:language"] = "es-ES"
+                if titulo:
+                    meta["dc:title"] = titulo
+                if autor:
+                    meta["dc:creator"] = autor
+                if asunto:
+                    meta["dc:description"] = asunto
+                
+                # Metadatos XMP básicos
+                meta["xmp:CreatorTool"] = "pdf_accesible.py - Script Python para PDF accesible"
+                meta["xmp:CreateDate"] = fecha_xmp
+                meta["xmp:ModifyDate"] = fecha_xmp
+                meta["xmp:MetadataDate"] = fecha_xmp
+                
+                # Metadatos PDF
+                meta["pdf:Producer"] = "pdf_accesible.py - Python Script con pikepdf"
+                meta["pdf:Trapped"] = "False"
+                
+                # Metadatos de accesibilidad PDF/UA
+                meta["pdfuaid:part"] = "1"
+                
+                # Metadatos PDF/A
+                meta["pdfaid:part"] = "1"
+                meta["pdfaid:conformance"] = "B"
+                
+                # Metadatos de accesibilidad Web
+                meta["a11y:accessibility"] = "Tagged PDF"
+                meta["a11y:accessible"] = "true"
+                
+                # Características de accesibilidad como array
+                accessibility_features = [
+                    "alternativeText",
+                    "structuredNavigation",
+                    "taggedPDF"
+                ]
+                meta.set_multiple("a11y:accessibilityFeature", accessibility_features)
+            
+            # Configurar catálogo del documento para PDF/UA
+            if "MarkInfo" not in pdf.Root:
+                pdf.Root.MarkInfo = Dictionary(
+                    Marked=True,
+                    Suspects=False,
+                    UserProperties=False
+                )
+            else:
+                pdf.Root.MarkInfo.Marked = True
+                pdf.Root.MarkInfo.Suspects = False
+            
+            # Establecer idioma del documento
+            pdf.Root.Lang = "es-ES"
+            
+            # Configurar el ViewerPreferences del documento
+            if "ViewerPreferences" not in pdf.Root:
+                pdf.Root.ViewerPreferences = Dictionary(
+                    DisplayDocTitle=True
+                )
+            else:
+                pdf.Root.ViewerPreferences.DisplayDocTitle = True
+            
+            # Asegurarse de que exista el árbol de estructura
+            if "StructTreeRoot" not in pdf.Root:
+                logger.warning("El documento no tiene estructura de etiquetas (StructTreeRoot). La accesibilidad puede ser limitada.")
+            
+            # Guardar el PDF con configuraciones para accesibilidad
+            pdf.save(
+                pdf_salida,
+                linearize=True,  # Optimizado para web
+                object_stream_mode=pikepdf.ObjectStreamMode.generate,  # Compresión eficiente
+                compress_streams=True,  # Comprimir streams
+                normalize_content=True,  # Normalizar el contenido
+                qdf=False  # No formatear para depuración
+            )
+            
+            logger.info(f"PDF accesible creado con éxito: {pdf_salida}")
+            
+    except Exception as e:
+        logger.error(f"Error al añadir metadatos de accesibilidad: {e}")
+        try:
+            # Intento alternativo más simple en caso de error
+            with pikepdf.open(pdf_path) as pdf:
+                # Establecer metadatos mínimos
+                with pdf.open_metadata() as meta:
+                    if titulo:
+                        meta["dc:title"] = titulo
+                    if autor:
+                        meta["dc:creator"] = autor
+                    meta["dc:language"] = "es-ES"
+                    meta["pdfuaid:part"] = "1"
+                
+                # Guardar con configuraciones básicas
+                pdf.save(pdf_salida)
+                
+                logger.warning("Se guardó el PDF con metadatos básicos debido a un error")
+        except Exception as save_error:
+            logger.error(f"Error crítico al guardar el PDF: {save_error}")
+            raise
+
+def procesar_pdf(ruta_entrada: str, ruta_salida: str, **kwargs) -> None:
+    """
+    Procesa un PDF para hacerlo accesible mediante OCR.
+    
+    Args:
+        ruta_entrada: Ruta al PDF original
+        ruta_salida: Ruta donde guardar el PDF accesible
+        **kwargs: Argumentos adicionales para la configuración
+    """
+    try:
+        # 1. Convertir PDF a imágenes
+        imagenes = convertir_pdf_a_imagenes(
+            ruta_entrada, 
+            dpi=kwargs.get('dpi', DPI)
+        )
+        
+        # 2. Aplicar OCR a las imágenes
+        textos = aplicar_ocr_a_imagenes(
+            imagenes, 
+            idioma=kwargs.get('idioma', OCR_LANG)
+        )
+        
+        # 3. Crear un PDF con capas de texto
+        # 3. Crear un PDF con capas de texto
+        temp_path = os.path.join(TEMP_DIR, "pdf_con_texto_temp.pdf")
+        pdf_con_texto = crear_pdf_con_capa_texto(imagenes, textos, temp_path)
+        # 4. Añadir metadatos de accesibilidad
+        añadir_metadatos_accesibilidad(
+            pdf_con_texto, 
+            ruta_salida,
+            titulo=kwargs.get('titulo'),
+            autor=kwargs.get('autor'),
+            asunto=kwargs.get('asunto')
+        )
+        
+        # 5. Limpiar archivos temporales
+        if os.path.exists(pdf_con_texto) and pdf_con_texto != ruta_salida:
+            os.remove(pdf_con_texto)
+            
+        logger.info(f"Proceso completado con éxito: {ruta_salida}")
+        
+    except Exception as e:
+        logger.error(f"Error al procesar el PDF: {e}")
+        raise
+
+
+def main():
+    """Función principal que procesa los argumentos y ejecuta el proceso."""
+    # Configurar el parser de argumentos
+    parser = argparse.ArgumentParser(
+        description="Hacer PDFs accesibles mediante OCR (español)"
+    )
+    
+    parser.add_argument(
+        "entrada", 
+        help="Ruta al archivo PDF de entrada"
+    )
+    
+    parser.add_argument(
+        "-o", "--salida", 
+        help="Ruta para el archivo PDF de salida. Si no se especifica, "
+             "se usará el nombre del archivo de entrada con sufijo '_accesible'"
+    )
+    
+    parser.add_argument(
+        "-d", "--dpi", 
+        type=int, 
+        default=DPI,
+        help=f"Resolución para la conversión de PDF a imagen (por defecto: {DPI})"
+    )
+    
+    parser.add_argument(
+        "-l", "--idioma", 
+        default=OCR_LANG,
+        help=f"Código de idioma para OCR (por defecto: {OCR_LANG})"
+    )
+    
+    parser.add_argument(
+        "-t", "--titulo", 
+        help="Título del documento (para metadatos)"
+    )
+    
+    parser.add_argument(
+        "-a", "--autor", 
+        help="Autor del documento (para metadatos)"
+    )
+    
+    parser.add_argument(
+        "-s", "--asunto", 
+        help="Asunto o descripción del documento (para metadatos)"
+    )
+    
+    parser.add_argument(
+        "-v", "--verbose", 
+        action="store_true",
+        help="Mostrar información detallada del proceso"
+    )
+    
+    # Parsear argumentos
+    args = parser.parse_args()
+    
+    # Configurar nivel de logging según verbose
+    if args.verbose:
+        logger.setLevel(logging.DEBUG)
+    
+    # Verificar que el archivo de entrada existe
+    if not os.path.isfile(args.entrada):
+        logger.error(f"El archivo de entrada no existe: {args.entrada}")
+        return 1
+    
+    # Determinar la ruta de salida si no se especificó
+    if not args.salida:
+        entrada_path = Path(args.entrada)
+        args.salida = str(entrada_path.parent / f"{entrada_path.stem}_accesible{entrada_path.suffix}")
+    
+    logger.info(f"Iniciando proceso de conversión a PDF accesible")
+    logger.info(f"Archivo de entrada: {args.entrada}")
+    logger.info(f"Archivo de salida: {args.salida}")
+    
+    try:
+        # Procesar el PDF
+        procesar_pdf(
+            args.entrada, 
+            args.salida,
+            dpi=args.dpi,
+            idioma=args.idioma,
+            titulo=args.titulo,
+            autor=args.autor,
+            asunto=args.asunto
+        )
+        logger.info("¡Proceso completado con éxito!")
+        return 0
+    
+    except Exception as e:
+        logger.error(f"Error durante el procesamiento: {e}")
+        return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
