@@ -1,0 +1,77 @@
+2025-04-03 09:52:44,186 - INFO - Directorio creado: temp_ocr
+2025-04-03 09:52:46,569 - INFO - El documento 'pdfs\carta.pdf' parece ser un PDF escaneado. Aplicando OCR.
+2025-04-03 09:52:48,547 - INFO - Texto OCR añadido a la página 1
+2025-04-03 09:52:48,554 - INFO - Procesado completado: pdfs\carta.pdf -> pdfs_accesibles\carta.pdf
+2025-04-03 09:52:48,564 - INFO - El documento 'pdfs\example.pdf' parece tener texto. Añadiendo etiquetas básicas.
+2025-04-03 09:52:48,564 - ERROR - Error procesando pdfs\example.pdf: 'Document' object has no attribute 'xpath_xml_metadata'
+2025-04-03 09:52:48,569 - INFO - Directorio temporal eliminado: temp_ocr
+2025-04-03 10:03:46,921 - INFO - Directorio creado: temp_ocr
+2025-04-03 10:03:50,826 - WARNING - No se encontraron PDFs en pdfs_originales
+2025-04-03 10:03:50,829 - INFO - Directorio temporal eliminado: temp_ocr
+2025-04-03 10:11:50,813 - INFO - Directorio creado: temp_ocr
+2025-04-03 10:11:53,886 - WARNING - No se encontraron PDFs en pdfs_originales
+2025-04-03 10:11:53,893 - INFO - Directorio temporal eliminado: temp_ocr
+2025-04-03 10:13:09,055 - INFO - Directorio creado: temp_ocr
+2025-04-03 10:13:11,400 - ERROR - Error procesando pdfs\carta.pdf: 'Document' object has no attribute 'xpath_xml_metadata'
+2025-04-03 10:13:11,402 - ERROR - Error procesando pdfs\example.pdf: 'Document' object has no attribute 'xpath_xml_metadata'
+2025-04-03 10:13:11,498 - INFO - Directorio temporal eliminado: temp_ocr
+2025-04-03 10:17:53,013 - INFO - Directorio creado: temp_ocr
+2025-04-03 10:17:56,597 - INFO - El documento 'pdfs\carta.pdf' parece ser un PDF escaneado. Aplicando OCR.
+2025-04-03 10:17:56,622 - INFO - El documento 'pdfs\example.pdf' parece tener texto. Añadiendo etiquetas estructurales.
+2025-04-03 10:17:56,624 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:17:56,628 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:17:56,631 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:17:56,631 - ERROR - Error procesando pdfs\example.pdf: Document.save() got an unexpected keyword argument 'compress'
+2025-04-03 10:18:03,230 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:18:03,244 - INFO - Texto OCR añadido a la página 1
+2025-04-03 10:18:03,245 - ERROR - Error procesando pdfs\carta.pdf: Document.save() got an unexpected keyword argument 'compress'
+2025-04-03 10:18:03,352 - INFO - Directorio temporal eliminado: temp_ocr
+2025-04-03 10:22:31,943 - INFO - Directorio creado: temp_ocr
+2025-04-03 10:22:34,222 - INFO - El documento 'pdfs\carta.pdf' parece ser un PDF escaneado. Aplicando OCR.
+2025-04-03 10:22:34,399 - INFO - El documento 'pdfs\example.pdf' parece tener texto. Añadiendo etiquetas estructurales.
+2025-04-03 10:22:34,403 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:22:34,413 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:22:34,417 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:22:34,434 - INFO - Procesado completado: pdfs\example.pdf -> pdfs_accesibles\example.pdf
+2025-04-03 10:22:41,946 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:22:41,966 - INFO - Texto OCR añadido a la página 1
+2025-04-03 10:22:42,075 - INFO - Procesado completado: pdfs\carta.pdf -> pdfs_accesibles\carta.pdf
+2025-04-03 10:22:42,201 - INFO - Directorio temporal eliminado: temp_ocr
+2025-04-03 10:25:38,258 - INFO - Directorio creado: temp_ocr
+2025-04-03 10:25:40,171 - INFO - El documento 'pdfs\carta.pdf' parece ser un PDF escaneado. Aplicando OCR.
+2025-04-03 10:25:40,193 - INFO - El documento 'pdfs\example.pdf' parece tener texto. Añadiendo etiquetas estructurales.
+2025-04-03 10:25:40,195 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:25:40,200 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:25:40,203 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:25:40,216 - INFO - Procesado completado: pdfs\example.pdf -> pdfs_accesibles\example.pdf
+2025-04-03 10:25:40,256 - INFO - El documento 'pdfs\205.pdf' parece tener texto. Añadiendo etiquetas estructurales.
+2025-04-03 10:25:40,327 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:25:41,027 - INFO - Procesado completado: pdfs\205.pdf -> pdfs_accesibles\205.pdf
+2025-04-03 10:25:46,208 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 10:25:46,224 - INFO - Texto OCR añadido a la página 1
+2025-04-03 10:25:46,348 - INFO - Procesado completado: pdfs\carta.pdf -> pdfs_accesibles\carta.pdf
+2025-04-03 10:25:46,553 - INFO - Directorio temporal eliminado: temp_ocr
+2025-04-03 15:22:18,291 - INFO - Directorio creado: temp_ocr
+2025-04-03 15:22:22,357 - INFO - El documento 'pdfs\carta.pdf' parece ser un PDF escaneado. Aplicando OCR.
+2025-04-03 15:22:22,392 - INFO - El documento 'pdfs\example.pdf' parece tener texto. Añadiendo etiquetas estructurales.
+2025-04-03 15:22:22,395 - ERROR - Error procesando pdfs\example.pdf: cannot access local variable 'new_page' where it is not associated with a value
+2025-04-03 15:22:22,419 - INFO - El documento 'pdfs\205.pdf' parece tener texto. Añadiendo etiquetas estructurales.
+2025-04-03 15:22:22,487 - ERROR - Error procesando pdfs\205.pdf: cannot access local variable 'new_page' where it is not associated with a value
+2025-04-03 15:22:28,253 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 15:22:28,267 - INFO - Texto OCR añadido a la página 1
+2025-04-03 15:22:28,350 - INFO - Procesado completado: pdfs\carta.pdf -> pdfs_accesibles\carta.pdf
+2025-04-03 15:22:28,479 - INFO - Directorio temporal eliminado: temp_ocr
+2025-04-03 15:28:22,926 - INFO - Directorio creado: temp_ocr
+2025-04-03 15:28:24,842 - INFO - El documento 'pdfs\205.pdf' parece tener texto. Añadiendo etiquetas estructurales.
+2025-04-03 15:28:24,852 - INFO - El documento 'pdfs\carta.pdf' parece ser un PDF escaneado. Aplicando OCR.
+2025-04-03 15:28:24,923 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 15:28:24,973 - INFO - El documento 'pdfs\example.pdf' parece tener texto. Añadiendo etiquetas estructurales.
+2025-04-03 15:28:24,975 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 15:28:24,980 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 15:28:24,984 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 15:28:24,992 - INFO - Procesado completado: pdfs\example.pdf -> pdfs_accesibles\example.pdf
+2025-04-03 15:28:25,817 - INFO - Procesado completado: pdfs\205.pdf -> pdfs_accesibles\205.pdf
+2025-04-03 15:28:32,210 - WARNING - Versión de PyMuPDF no soporta etiquetado estructural completo
+2025-04-03 15:28:32,213 - INFO - Texto OCR añadido a la página 1
+2025-04-03 15:28:32,337 - INFO - Procesado completado: pdfs\carta.pdf -> pdfs_accesibles\carta.pdf
+2025-04-03 15:28:32,493 - INFO - Directorio temporal eliminado: temp_ocr

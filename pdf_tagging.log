@@ -1,0 +1,629 @@
+2025-04-02 10:05:15,968 - INFO - Directorio de entrada creado: pdfs_originales
+2025-04-02 10:05:18,829 - WARNING - No se encontraron PDFs en pdfs_originales
+2025-04-02 10:05:52,296 - INFO - Página 1, Imagen 1: Texto alternativo asignado: 'Eurostars Images 1'
+2025-04-02 10:05:52,297 - INFO - Página 1, Imagen 2: Texto alternativo asignado: 'Eurostars Images 2'
+2025-04-02 10:05:52,297 - INFO - Página 1, Imagen 3: Texto alternativo asignado: 'Eurostars Images 3'
+2025-04-02 10:05:52,297 - INFO - Página 1, Imagen 4: Texto alternativo asignado: 'Eurostars Images 4'
+2025-04-02 10:05:52,297 - INFO - Página 1, Imagen 5: Texto alternativo asignado: 'Eurostars Images 5'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 6: Texto alternativo asignado: 'Eurostars Images 6'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 7: Texto alternativo asignado: 'Eurostars Images 7'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 8: Texto alternativo asignado: 'Eurostars Images 8'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 9: Texto alternativo asignado: 'Eurostars Images 9'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 10: Texto alternativo asignado: 'Eurostars Images 10'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 11: Texto alternativo asignado: 'Eurostars Images 11'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 12: Texto alternativo asignado: 'Eurostars Images 12'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 13: Texto alternativo asignado: 'Eurostars Images 13'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 14: Texto alternativo asignado: 'Eurostars Images 14'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 15: Texto alternativo asignado: 'Eurostars Images 15'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 16: Texto alternativo asignado: 'Eurostars Images 16'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 17: Texto alternativo asignado: 'Eurostars Images 17'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 18: Texto alternativo asignado: 'Eurostars Images 18'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 19: Texto alternativo asignado: 'Eurostars Images 19'
+2025-04-02 10:05:52,298 - INFO - Página 1, Imagen 20: Texto alternativo asignado: 'Eurostars Images 20'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 21: Texto alternativo asignado: 'Eurostars Images 21'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 22: Texto alternativo asignado: 'Eurostars Images 22'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 23: Texto alternativo asignado: 'Eurostars Images 23'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 24: Texto alternativo asignado: 'Eurostars Images 24'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 25: Texto alternativo asignado: 'Eurostars Images 25'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 26: Texto alternativo asignado: 'Eurostars Images 26'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 27: Texto alternativo asignado: 'Eurostars Images 27'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 28: Texto alternativo asignado: 'Eurostars Images 28'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 29: Texto alternativo asignado: 'Eurostars Images 29'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 30: Texto alternativo asignado: 'Eurostars Images 30'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 31: Texto alternativo asignado: 'Eurostars Images 31'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 32: Texto alternativo asignado: 'Eurostars Images 32'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 33: Texto alternativo asignado: 'Eurostars Images 33'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 34: Texto alternativo asignado: 'Eurostars Images 34'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 35: Texto alternativo asignado: 'Eurostars Images 35'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 36: Texto alternativo asignado: 'Eurostars Images 36'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 37: Texto alternativo asignado: 'Eurostars Images 37'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 38: Texto alternativo asignado: 'Eurostars Images 38'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 39: Texto alternativo asignado: 'Eurostars Images 39'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 40: Texto alternativo asignado: 'Eurostars Images 40'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 41: Texto alternativo asignado: 'Eurostars Images 41'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 42: Texto alternativo asignado: 'Eurostars Images 42'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 43: Texto alternativo asignado: 'Eurostars Images 43'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 44: Texto alternativo asignado: 'Eurostars Images 44'
+2025-04-02 10:05:52,299 - INFO - Página 1, Imagen 45: Texto alternativo asignado: 'Eurostars Images 45'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 46: Texto alternativo asignado: 'Eurostars Images 46'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 47: Texto alternativo asignado: 'Eurostars Images 47'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 48: Texto alternativo asignado: 'Eurostars Images 48'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 49: Texto alternativo asignado: 'Eurostars Images 49'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 50: Texto alternativo asignado: 'Eurostars Images 50'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 51: Texto alternativo asignado: 'Eurostars Images 51'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 52: Texto alternativo asignado: 'Eurostars Images 52'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 53: Texto alternativo asignado: 'Eurostars Images 53'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 54: Texto alternativo asignado: 'Eurostars Images 54'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 55: Texto alternativo asignado: 'Eurostars Images 55'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 56: Texto alternativo asignado: 'Eurostars Images 56'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 57: Texto alternativo asignado: 'Eurostars Images 57'
+2025-04-02 10:05:52,300 - INFO - Página 1, Imagen 58: Texto alternativo asignado: 'Eurostars Images 58'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 59: Texto alternativo asignado: 'Eurostars Images 59'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 60: Texto alternativo asignado: 'Eurostars Images 60'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 61: Texto alternativo asignado: 'Eurostars Images 61'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 62: Texto alternativo asignado: 'Eurostars Images 62'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 63: Texto alternativo asignado: 'Eurostars Images 63'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 64: Texto alternativo asignado: 'Eurostars Images 64'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 65: Texto alternativo asignado: 'Eurostars Images 65'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 66: Texto alternativo asignado: 'Eurostars Images 66'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 67: Texto alternativo asignado: 'Eurostars Images 67'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 68: Texto alternativo asignado: 'Eurostars Images 68'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 69: Texto alternativo asignado: 'Eurostars Images 69'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 70: Texto alternativo asignado: 'Eurostars Images 70'
+2025-04-02 10:05:52,301 - INFO - Página 1, Imagen 71: Texto alternativo asignado: 'Eurostars Images 71'
+2025-04-02 10:05:52,302 - INFO - Página 1, Imagen 72: Texto alternativo asignado: 'Eurostars Images 72'
+2025-04-02 10:05:52,302 - INFO - Página 1, Imagen 73: Texto alternativo asignado: 'Eurostars Images 73'
+2025-04-02 10:05:52,302 - INFO - Página 1, Imagen 74: Texto alternativo asignado: 'Eurostars Images 74'
+2025-04-02 10:05:52,302 - INFO - Página 1, Imagen 75: Texto alternativo asignado: 'Eurostars Images 75'
+2025-04-02 10:05:52,302 - INFO - Página 1, Imagen 76: Texto alternativo asignado: 'Eurostars Images 76'
+2025-04-02 10:05:52,302 - INFO - Página 1, Imagen 77: Texto alternativo asignado: 'Eurostars Images 77'
+2025-04-02 10:05:52,302 - INFO - Página 1, Imagen 78: Texto alternativo asignado: 'Eurostars Images 78'
+2025-04-02 10:05:52,302 - INFO - Página 1, Imagen 79: Texto alternativo asignado: 'Eurostars Images 79'
+2025-04-02 10:05:52,302 - INFO - Página 1, Imagen 80: Texto alternativo asignado: 'Eurostars Images 80'
+2025-04-02 10:05:52,302 - INFO - Página 1, Imagen 81: Texto alternativo asignado: 'Eurostars Images 81'
+2025-04-02 10:05:52,302 - INFO - Página 1, Imagen 82: Texto alternativo asignado: 'Eurostars Images 82'
+2025-04-02 10:05:52,303 - INFO - Página 1, Imagen 83: Texto alternativo asignado: 'Eurostars Images 83'
+2025-04-02 10:05:52,303 - INFO - Página 1, Imagen 84: Texto alternativo asignado: 'Eurostars Images 84'
+2025-04-02 10:05:52,303 - INFO - Página 1, Imagen 85: Texto alternativo asignado: 'Eurostars Images 85'
+2025-04-02 10:05:52,303 - INFO - Página 1, Imagen 86: Texto alternativo asignado: 'Eurostars Images 86'
+2025-04-02 10:05:52,303 - INFO - Página 1, Imagen 87: Texto alternativo asignado: 'Eurostars Images 87'
+2025-04-02 10:05:52,303 - INFO - Página 1, Imagen 88: Texto alternativo asignado: 'Eurostars Images 88'
+2025-04-02 10:05:52,303 - INFO - Página 1, Imagen 89: Texto alternativo asignado: 'Eurostars Images 89'
+2025-04-02 10:05:52,303 - INFO - Página 1, Imagen 90: Texto alternativo asignado: 'Eurostars Images 90'
+2025-04-02 10:05:52,303 - INFO - Página 1, Imagen 91: Texto alternativo asignado: 'Eurostars Images 91'
+2025-04-02 10:05:52,303 - INFO - Página 1, Imagen 92: Texto alternativo asignado: 'Eurostars Images 92'
+2025-04-02 10:05:52,303 - INFO - Página 1, Imagen 93: Texto alternativo asignado: 'Eurostars Images 93'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 94: Texto alternativo asignado: 'Eurostars Images 94'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 95: Texto alternativo asignado: 'Eurostars Images 95'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 96: Texto alternativo asignado: 'Eurostars Images 96'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 97: Texto alternativo asignado: 'Eurostars Images 97'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 98: Texto alternativo asignado: 'Eurostars Images 98'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 99: Texto alternativo asignado: 'Eurostars Images 99'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 100: Texto alternativo asignado: 'Eurostars Images 100'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 101: Texto alternativo asignado: 'Eurostars Images 101'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 102: Texto alternativo asignado: 'Eurostars Images 102'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 103: Texto alternativo asignado: 'Eurostars Images 103'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 104: Texto alternativo asignado: 'Eurostars Images 104'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 105: Texto alternativo asignado: 'Eurostars Images 105'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 106: Texto alternativo asignado: 'Eurostars Images 106'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 107: Texto alternativo asignado: 'Eurostars Images 107'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 108: Texto alternativo asignado: 'Eurostars Images 108'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 109: Texto alternativo asignado: 'Eurostars Images 109'
+2025-04-02 10:05:52,304 - INFO - Página 1, Imagen 110: Texto alternativo asignado: 'Eurostars Images 110'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 111: Texto alternativo asignado: 'Eurostars Images 111'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 112: Texto alternativo asignado: 'Eurostars Images 112'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 113: Texto alternativo asignado: 'Eurostars Images 113'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 114: Texto alternativo asignado: 'Eurostars Images 114'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 115: Texto alternativo asignado: 'Eurostars Images 115'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 116: Texto alternativo asignado: 'Eurostars Images 116'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 117: Texto alternativo asignado: 'Eurostars Images 117'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 118: Texto alternativo asignado: 'Eurostars Images 118'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 119: Texto alternativo asignado: 'Eurostars Images 119'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 120: Texto alternativo asignado: 'Eurostars Images 120'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 121: Texto alternativo asignado: 'Eurostars Images 121'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 122: Texto alternativo asignado: 'Eurostars Images 122'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 123: Texto alternativo asignado: 'Eurostars Images 123'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 124: Texto alternativo asignado: 'Eurostars Images 124'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 125: Texto alternativo asignado: 'Eurostars Images 125'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 126: Texto alternativo asignado: 'Eurostars Images 126'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 127: Texto alternativo asignado: 'Eurostars Images 127'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 128: Texto alternativo asignado: 'Eurostars Images 128'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 129: Texto alternativo asignado: 'Eurostars Images 129'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 130: Texto alternativo asignado: 'Eurostars Images 130'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 131: Texto alternativo asignado: 'Eurostars Images 131'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 132: Texto alternativo asignado: 'Eurostars Images 132'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 133: Texto alternativo asignado: 'Eurostars Images 133'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 134: Texto alternativo asignado: 'Eurostars Images 134'
+2025-04-02 10:05:52,305 - INFO - Página 1, Imagen 135: Texto alternativo asignado: 'Eurostars Images 135'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 136: Texto alternativo asignado: 'Eurostars Images 136'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 137: Texto alternativo asignado: 'Eurostars Images 137'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 138: Texto alternativo asignado: 'Eurostars Images 138'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 139: Texto alternativo asignado: 'Eurostars Images 139'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 140: Texto alternativo asignado: 'Eurostars Images 140'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 141: Texto alternativo asignado: 'Eurostars Images 141'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 142: Texto alternativo asignado: 'Eurostars Images 142'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 143: Texto alternativo asignado: 'Eurostars Images 143'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 144: Texto alternativo asignado: 'Eurostars Images 144'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 145: Texto alternativo asignado: 'Eurostars Images 145'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 146: Texto alternativo asignado: 'Eurostars Images 146'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 147: Texto alternativo asignado: 'Eurostars Images 147'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 148: Texto alternativo asignado: 'Eurostars Images 148'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 149: Texto alternativo asignado: 'Eurostars Images 149'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 150: Texto alternativo asignado: 'Eurostars Images 150'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 151: Texto alternativo asignado: 'Eurostars Images 151'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 152: Texto alternativo asignado: 'Eurostars Images 152'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 153: Texto alternativo asignado: 'Eurostars Images 153'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 154: Texto alternativo asignado: 'Eurostars Images 154'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 155: Texto alternativo asignado: 'Eurostars Images 155'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 156: Texto alternativo asignado: 'Eurostars Images 156'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 157: Texto alternativo asignado: 'Eurostars Images 157'
+2025-04-02 10:05:52,306 - INFO - Página 1, Imagen 158: Texto alternativo asignado: 'Eurostars Images 158'
+2025-04-02 10:05:52,307 - INFO - Página 1, Imagen 159: Texto alternativo asignado: 'Eurostars Images 159'
+2025-04-02 10:05:52,307 - INFO - Página 1, Imagen 160: Texto alternativo asignado: 'Eurostars Images 160'
+2025-04-02 10:05:52,307 - INFO - Página 1, Imagen 161: Texto alternativo asignado: 'Eurostars Images 161'
+2025-04-02 10:05:52,307 - INFO - Página 1, Imagen 162: Texto alternativo asignado: 'Eurostars Images 162'
+2025-04-02 10:05:52,307 - INFO - Página 1, Imagen 163: Texto alternativo asignado: 'Eurostars Images 163'
+2025-04-02 10:05:52,307 - INFO - Página 1, Imagen 164: Texto alternativo asignado: 'Eurostars Images 164'
+2025-04-02 10:05:52,307 - INFO - Página 1, Imagen 165: Texto alternativo asignado: 'Eurostars Images 165'
+2025-04-02 10:05:52,307 - INFO - Página 1, Imagen 166: Texto alternativo asignado: 'Eurostars Images 166'
+2025-04-02 10:05:52,307 - INFO - Página 1, Imagen 167: Texto alternativo asignado: 'Eurostars Images 167'
+2025-04-02 10:05:52,307 - INFO - Página 1, Imagen 168: Texto alternativo asignado: 'Eurostars Images 168'
+2025-04-02 10:05:52,307 - INFO - Página 1, Imagen 169: Texto alternativo asignado: 'Eurostars Images 169'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 170: Texto alternativo asignado: 'Eurostars Images 170'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 171: Texto alternativo asignado: 'Eurostars Images 171'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 172: Texto alternativo asignado: 'Eurostars Images 172'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 173: Texto alternativo asignado: 'Eurostars Images 173'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 174: Texto alternativo asignado: 'Eurostars Images 174'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 175: Texto alternativo asignado: 'Eurostars Images 175'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 176: Texto alternativo asignado: 'Eurostars Images 176'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 177: Texto alternativo asignado: 'Eurostars Images 177'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 178: Texto alternativo asignado: 'Eurostars Images 178'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 179: Texto alternativo asignado: 'Eurostars Images 179'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 180: Texto alternativo asignado: 'Eurostars Images 180'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 181: Texto alternativo asignado: 'Eurostars Images 181'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 182: Texto alternativo asignado: 'Eurostars Images 182'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 183: Texto alternativo asignado: 'Eurostars Images 183'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 184: Texto alternativo asignado: 'Eurostars Images 184'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 185: Texto alternativo asignado: 'Eurostars Images 185'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 186: Texto alternativo asignado: 'Eurostars Images 186'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 187: Texto alternativo asignado: 'Eurostars Images 187'
+2025-04-02 10:05:52,308 - INFO - Página 1, Imagen 188: Texto alternativo asignado: 'Eurostars Images 188'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 189: Texto alternativo asignado: 'Eurostars Images 189'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 190: Texto alternativo asignado: 'Eurostars Images 190'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 191: Texto alternativo asignado: 'Eurostars Images 191'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 192: Texto alternativo asignado: 'Eurostars Images 192'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 193: Texto alternativo asignado: 'Eurostars Images 193'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 194: Texto alternativo asignado: 'Eurostars Images 194'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 195: Texto alternativo asignado: 'Eurostars Images 195'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 196: Texto alternativo asignado: 'Eurostars Images 196'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 197: Texto alternativo asignado: 'Eurostars Images 197'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 198: Texto alternativo asignado: 'Eurostars Images 198'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 199: Texto alternativo asignado: 'Eurostars Images 199'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 200: Texto alternativo asignado: 'Eurostars Images 200'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 201: Texto alternativo asignado: 'Eurostars Images 201'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 202: Texto alternativo asignado: 'Eurostars Images 202'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 203: Texto alternativo asignado: 'Eurostars Images 203'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 204: Texto alternativo asignado: 'Eurostars Images 204'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 205: Texto alternativo asignado: 'Eurostars Images 205'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 206: Texto alternativo asignado: 'Eurostars Images 206'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 207: Texto alternativo asignado: 'Eurostars Images 207'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 208: Texto alternativo asignado: 'Eurostars Images 208'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 209: Texto alternativo asignado: 'Eurostars Images 209'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 210: Texto alternativo asignado: 'Eurostars Images 210'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 211: Texto alternativo asignado: 'Eurostars Images 211'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 212: Texto alternativo asignado: 'Eurostars Images 212'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 213: Texto alternativo asignado: 'Eurostars Images 213'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 214: Texto alternativo asignado: 'Eurostars Images 214'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 215: Texto alternativo asignado: 'Eurostars Images 215'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 216: Texto alternativo asignado: 'Eurostars Images 216'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 217: Texto alternativo asignado: 'Eurostars Images 217'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 218: Texto alternativo asignado: 'Eurostars Images 218'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 219: Texto alternativo asignado: 'Eurostars Images 219'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 220: Texto alternativo asignado: 'Eurostars Images 220'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 221: Texto alternativo asignado: 'Eurostars Images 221'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 222: Texto alternativo asignado: 'Eurostars Images 222'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 223: Texto alternativo asignado: 'Eurostars Images 223'
+2025-04-02 10:05:52,309 - INFO - Página 1, Imagen 224: Texto alternativo asignado: 'Eurostars Images 224'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 225: Texto alternativo asignado: 'Eurostars Images 225'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 226: Texto alternativo asignado: 'Eurostars Images 226'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 227: Texto alternativo asignado: 'Eurostars Images 227'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 228: Texto alternativo asignado: 'Eurostars Images 228'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 229: Texto alternativo asignado: 'Eurostars Images 229'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 230: Texto alternativo asignado: 'Eurostars Images 230'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 231: Texto alternativo asignado: 'Eurostars Images 231'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 232: Texto alternativo asignado: 'Eurostars Images 232'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 233: Texto alternativo asignado: 'Eurostars Images 233'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 234: Texto alternativo asignado: 'Eurostars Images 234'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 235: Texto alternativo asignado: 'Eurostars Images 235'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 236: Texto alternativo asignado: 'Eurostars Images 236'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 237: Texto alternativo asignado: 'Eurostars Images 237'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 238: Texto alternativo asignado: 'Eurostars Images 238'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 239: Texto alternativo asignado: 'Eurostars Images 239'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 240: Texto alternativo asignado: 'Eurostars Images 240'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 241: Texto alternativo asignado: 'Eurostars Images 241'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 242: Texto alternativo asignado: 'Eurostars Images 242'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 243: Texto alternativo asignado: 'Eurostars Images 243'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 244: Texto alternativo asignado: 'Eurostars Images 244'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 245: Texto alternativo asignado: 'Eurostars Images 245'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 246: Texto alternativo asignado: 'Eurostars Images 246'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 247: Texto alternativo asignado: 'Eurostars Images 247'
+2025-04-02 10:05:52,310 - INFO - Página 1, Imagen 248: Texto alternativo asignado: 'Eurostars Images 248'
+2025-04-02 10:20:50,031 - ERROR - Error al etiquetar el PDF C:\Users\RL000056\AppData\Local\Temp\tmp5uqzmb11.pdf: bad allocation
+2025-04-02 10:25:58,541 - INFO - Página 1, Imagen 1: Texto alternativo asignado: 'Eurostars Images 1'
+2025-04-02 10:25:58,542 - INFO - Página 1, Imagen 2: Texto alternativo asignado: 'Eurostars Images 2'
+2025-04-02 10:25:58,542 - INFO - Página 1, Imagen 3: Texto alternativo asignado: 'Eurostars Images 3'
+2025-04-02 10:25:58,543 - INFO - Página 1, Imagen 4: Texto alternativo asignado: 'Eurostars Images 4'
+2025-04-02 10:25:58,543 - INFO - Página 1, Imagen 5: Texto alternativo asignado: 'Eurostars Images 5'
+2025-04-02 10:25:58,543 - INFO - Página 1, Imagen 6: Texto alternativo asignado: 'Eurostars Images 6'
+2025-04-02 10:25:58,543 - INFO - Página 1, Imagen 7: Texto alternativo asignado: 'Eurostars Images 7'
+2025-04-02 10:25:58,543 - INFO - Página 1, Imagen 8: Texto alternativo asignado: 'Eurostars Images 8'
+2025-04-02 10:25:58,543 - INFO - Página 1, Imagen 9: Texto alternativo asignado: 'Eurostars Images 9'
+2025-04-02 10:25:58,543 - INFO - Página 1, Imagen 10: Texto alternativo asignado: 'Eurostars Images 10'
+2025-04-02 10:25:58,544 - INFO - Página 1, Imagen 11: Texto alternativo asignado: 'Eurostars Images 11'
+2025-04-02 10:25:58,544 - INFO - Página 1, Imagen 12: Texto alternativo asignado: 'Eurostars Images 12'
+2025-04-02 10:25:58,544 - INFO - Página 1, Imagen 13: Texto alternativo asignado: 'Eurostars Images 13'
+2025-04-02 10:25:58,544 - INFO - Página 1, Imagen 14: Texto alternativo asignado: 'Eurostars Images 14'
+2025-04-02 10:25:58,544 - INFO - Página 1, Imagen 15: Texto alternativo asignado: 'Eurostars Images 15'
+2025-04-02 10:25:58,544 - INFO - Página 1, Imagen 16: Texto alternativo asignado: 'Eurostars Images 16'
+2025-04-02 10:25:58,544 - INFO - Página 1, Imagen 17: Texto alternativo asignado: 'Eurostars Images 17'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 18: Texto alternativo asignado: 'Eurostars Images 18'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 19: Texto alternativo asignado: 'Eurostars Images 19'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 20: Texto alternativo asignado: 'Eurostars Images 20'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 21: Texto alternativo asignado: 'Eurostars Images 21'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 22: Texto alternativo asignado: 'Eurostars Images 22'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 23: Texto alternativo asignado: 'Eurostars Images 23'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 24: Texto alternativo asignado: 'Eurostars Images 24'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 25: Texto alternativo asignado: 'Eurostars Images 25'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 26: Texto alternativo asignado: 'Eurostars Images 26'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 27: Texto alternativo asignado: 'Eurostars Images 27'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 28: Texto alternativo asignado: 'Eurostars Images 28'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 29: Texto alternativo asignado: 'Eurostars Images 29'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 30: Texto alternativo asignado: 'Eurostars Images 30'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 31: Texto alternativo asignado: 'Eurostars Images 31'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 32: Texto alternativo asignado: 'Eurostars Images 32'
+2025-04-02 10:25:58,545 - INFO - Página 1, Imagen 33: Texto alternativo asignado: 'Eurostars Images 33'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 34: Texto alternativo asignado: 'Eurostars Images 34'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 35: Texto alternativo asignado: 'Eurostars Images 35'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 36: Texto alternativo asignado: 'Eurostars Images 36'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 37: Texto alternativo asignado: 'Eurostars Images 37'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 38: Texto alternativo asignado: 'Eurostars Images 38'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 39: Texto alternativo asignado: 'Eurostars Images 39'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 40: Texto alternativo asignado: 'Eurostars Images 40'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 41: Texto alternativo asignado: 'Eurostars Images 41'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 42: Texto alternativo asignado: 'Eurostars Images 42'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 43: Texto alternativo asignado: 'Eurostars Images 43'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 44: Texto alternativo asignado: 'Eurostars Images 44'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 45: Texto alternativo asignado: 'Eurostars Images 45'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 46: Texto alternativo asignado: 'Eurostars Images 46'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 47: Texto alternativo asignado: 'Eurostars Images 47'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 48: Texto alternativo asignado: 'Eurostars Images 48'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 49: Texto alternativo asignado: 'Eurostars Images 49'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 50: Texto alternativo asignado: 'Eurostars Images 50'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 51: Texto alternativo asignado: 'Eurostars Images 51'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 52: Texto alternativo asignado: 'Eurostars Images 52'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 53: Texto alternativo asignado: 'Eurostars Images 53'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 54: Texto alternativo asignado: 'Eurostars Images 54'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 55: Texto alternativo asignado: 'Eurostars Images 55'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 56: Texto alternativo asignado: 'Eurostars Images 56'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 57: Texto alternativo asignado: 'Eurostars Images 57'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 58: Texto alternativo asignado: 'Eurostars Images 58'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 59: Texto alternativo asignado: 'Eurostars Images 59'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 60: Texto alternativo asignado: 'Eurostars Images 60'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 61: Texto alternativo asignado: 'Eurostars Images 61'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 62: Texto alternativo asignado: 'Eurostars Images 62'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 63: Texto alternativo asignado: 'Eurostars Images 63'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 64: Texto alternativo asignado: 'Eurostars Images 64'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 65: Texto alternativo asignado: 'Eurostars Images 65'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 66: Texto alternativo asignado: 'Eurostars Images 66'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 67: Texto alternativo asignado: 'Eurostars Images 67'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 68: Texto alternativo asignado: 'Eurostars Images 68'
+2025-04-02 10:25:58,546 - INFO - Página 1, Imagen 69: Texto alternativo asignado: 'Eurostars Images 69'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 70: Texto alternativo asignado: 'Eurostars Images 70'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 71: Texto alternativo asignado: 'Eurostars Images 71'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 72: Texto alternativo asignado: 'Eurostars Images 72'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 73: Texto alternativo asignado: 'Eurostars Images 73'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 74: Texto alternativo asignado: 'Eurostars Images 74'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 75: Texto alternativo asignado: 'Eurostars Images 75'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 76: Texto alternativo asignado: 'Eurostars Images 76'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 77: Texto alternativo asignado: 'Eurostars Images 77'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 78: Texto alternativo asignado: 'Eurostars Images 78'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 79: Texto alternativo asignado: 'Eurostars Images 79'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 80: Texto alternativo asignado: 'Eurostars Images 80'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 81: Texto alternativo asignado: 'Eurostars Images 81'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 82: Texto alternativo asignado: 'Eurostars Images 82'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 83: Texto alternativo asignado: 'Eurostars Images 83'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 84: Texto alternativo asignado: 'Eurostars Images 84'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 85: Texto alternativo asignado: 'Eurostars Images 85'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 86: Texto alternativo asignado: 'Eurostars Images 86'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 87: Texto alternativo asignado: 'Eurostars Images 87'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 88: Texto alternativo asignado: 'Eurostars Images 88'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 89: Texto alternativo asignado: 'Eurostars Images 89'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 90: Texto alternativo asignado: 'Eurostars Images 90'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 91: Texto alternativo asignado: 'Eurostars Images 91'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 92: Texto alternativo asignado: 'Eurostars Images 92'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 93: Texto alternativo asignado: 'Eurostars Images 93'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 94: Texto alternativo asignado: 'Eurostars Images 94'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 95: Texto alternativo asignado: 'Eurostars Images 95'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 96: Texto alternativo asignado: 'Eurostars Images 96'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 97: Texto alternativo asignado: 'Eurostars Images 97'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 98: Texto alternativo asignado: 'Eurostars Images 98'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 99: Texto alternativo asignado: 'Eurostars Images 99'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 100: Texto alternativo asignado: 'Eurostars Images 100'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 101: Texto alternativo asignado: 'Eurostars Images 101'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 102: Texto alternativo asignado: 'Eurostars Images 102'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 103: Texto alternativo asignado: 'Eurostars Images 103'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 104: Texto alternativo asignado: 'Eurostars Images 104'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 105: Texto alternativo asignado: 'Eurostars Images 105'
+2025-04-02 10:25:58,547 - INFO - Página 1, Imagen 106: Texto alternativo asignado: 'Eurostars Images 106'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 107: Texto alternativo asignado: 'Eurostars Images 107'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 108: Texto alternativo asignado: 'Eurostars Images 108'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 109: Texto alternativo asignado: 'Eurostars Images 109'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 110: Texto alternativo asignado: 'Eurostars Images 110'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 111: Texto alternativo asignado: 'Eurostars Images 111'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 112: Texto alternativo asignado: 'Eurostars Images 112'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 113: Texto alternativo asignado: 'Eurostars Images 113'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 114: Texto alternativo asignado: 'Eurostars Images 114'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 115: Texto alternativo asignado: 'Eurostars Images 115'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 116: Texto alternativo asignado: 'Eurostars Images 116'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 117: Texto alternativo asignado: 'Eurostars Images 117'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 118: Texto alternativo asignado: 'Eurostars Images 118'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 119: Texto alternativo asignado: 'Eurostars Images 119'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 120: Texto alternativo asignado: 'Eurostars Images 120'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 121: Texto alternativo asignado: 'Eurostars Images 121'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 122: Texto alternativo asignado: 'Eurostars Images 122'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 123: Texto alternativo asignado: 'Eurostars Images 123'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 124: Texto alternativo asignado: 'Eurostars Images 124'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 125: Texto alternativo asignado: 'Eurostars Images 125'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 126: Texto alternativo asignado: 'Eurostars Images 126'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 127: Texto alternativo asignado: 'Eurostars Images 127'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 128: Texto alternativo asignado: 'Eurostars Images 128'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 129: Texto alternativo asignado: 'Eurostars Images 129'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 130: Texto alternativo asignado: 'Eurostars Images 130'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 131: Texto alternativo asignado: 'Eurostars Images 131'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 132: Texto alternativo asignado: 'Eurostars Images 132'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 133: Texto alternativo asignado: 'Eurostars Images 133'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 134: Texto alternativo asignado: 'Eurostars Images 134'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 135: Texto alternativo asignado: 'Eurostars Images 135'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 136: Texto alternativo asignado: 'Eurostars Images 136'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 137: Texto alternativo asignado: 'Eurostars Images 137'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 138: Texto alternativo asignado: 'Eurostars Images 138'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 139: Texto alternativo asignado: 'Eurostars Images 139'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 140: Texto alternativo asignado: 'Eurostars Images 140'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 141: Texto alternativo asignado: 'Eurostars Images 141'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 142: Texto alternativo asignado: 'Eurostars Images 142'
+2025-04-02 10:25:58,548 - INFO - Página 1, Imagen 143: Texto alternativo asignado: 'Eurostars Images 143'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 144: Texto alternativo asignado: 'Eurostars Images 144'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 145: Texto alternativo asignado: 'Eurostars Images 145'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 146: Texto alternativo asignado: 'Eurostars Images 146'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 147: Texto alternativo asignado: 'Eurostars Images 147'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 148: Texto alternativo asignado: 'Eurostars Images 148'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 149: Texto alternativo asignado: 'Eurostars Images 149'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 150: Texto alternativo asignado: 'Eurostars Images 150'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 151: Texto alternativo asignado: 'Eurostars Images 151'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 152: Texto alternativo asignado: 'Eurostars Images 152'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 153: Texto alternativo asignado: 'Eurostars Images 153'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 154: Texto alternativo asignado: 'Eurostars Images 154'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 155: Texto alternativo asignado: 'Eurostars Images 155'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 156: Texto alternativo asignado: 'Eurostars Images 156'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 157: Texto alternativo asignado: 'Eurostars Images 157'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 158: Texto alternativo asignado: 'Eurostars Images 158'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 159: Texto alternativo asignado: 'Eurostars Images 159'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 160: Texto alternativo asignado: 'Eurostars Images 160'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 161: Texto alternativo asignado: 'Eurostars Images 161'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 162: Texto alternativo asignado: 'Eurostars Images 162'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 163: Texto alternativo asignado: 'Eurostars Images 163'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 164: Texto alternativo asignado: 'Eurostars Images 164'
+2025-04-02 10:25:58,549 - INFO - Página 1, Imagen 165: Texto alternativo asignado: 'Eurostars Images 165'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 166: Texto alternativo asignado: 'Eurostars Images 166'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 167: Texto alternativo asignado: 'Eurostars Images 167'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 168: Texto alternativo asignado: 'Eurostars Images 168'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 169: Texto alternativo asignado: 'Eurostars Images 169'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 170: Texto alternativo asignado: 'Eurostars Images 170'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 171: Texto alternativo asignado: 'Eurostars Images 171'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 172: Texto alternativo asignado: 'Eurostars Images 172'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 173: Texto alternativo asignado: 'Eurostars Images 173'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 174: Texto alternativo asignado: 'Eurostars Images 174'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 175: Texto alternativo asignado: 'Eurostars Images 175'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 176: Texto alternativo asignado: 'Eurostars Images 176'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 177: Texto alternativo asignado: 'Eurostars Images 177'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 178: Texto alternativo asignado: 'Eurostars Images 178'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 179: Texto alternativo asignado: 'Eurostars Images 179'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 180: Texto alternativo asignado: 'Eurostars Images 180'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 181: Texto alternativo asignado: 'Eurostars Images 181'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 182: Texto alternativo asignado: 'Eurostars Images 182'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 183: Texto alternativo asignado: 'Eurostars Images 183'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 184: Texto alternativo asignado: 'Eurostars Images 184'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 185: Texto alternativo asignado: 'Eurostars Images 185'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 186: Texto alternativo asignado: 'Eurostars Images 186'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 187: Texto alternativo asignado: 'Eurostars Images 187'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 188: Texto alternativo asignado: 'Eurostars Images 188'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 189: Texto alternativo asignado: 'Eurostars Images 189'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 190: Texto alternativo asignado: 'Eurostars Images 190'
+2025-04-02 10:25:58,550 - INFO - Página 1, Imagen 191: Texto alternativo asignado: 'Eurostars Images 191'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 192: Texto alternativo asignado: 'Eurostars Images 192'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 193: Texto alternativo asignado: 'Eurostars Images 193'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 194: Texto alternativo asignado: 'Eurostars Images 194'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 195: Texto alternativo asignado: 'Eurostars Images 195'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 196: Texto alternativo asignado: 'Eurostars Images 196'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 197: Texto alternativo asignado: 'Eurostars Images 197'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 198: Texto alternativo asignado: 'Eurostars Images 198'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 199: Texto alternativo asignado: 'Eurostars Images 199'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 200: Texto alternativo asignado: 'Eurostars Images 200'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 201: Texto alternativo asignado: 'Eurostars Images 201'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 202: Texto alternativo asignado: 'Eurostars Images 202'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 203: Texto alternativo asignado: 'Eurostars Images 203'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 204: Texto alternativo asignado: 'Eurostars Images 204'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 205: Texto alternativo asignado: 'Eurostars Images 205'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 206: Texto alternativo asignado: 'Eurostars Images 206'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 207: Texto alternativo asignado: 'Eurostars Images 207'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 208: Texto alternativo asignado: 'Eurostars Images 208'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 209: Texto alternativo asignado: 'Eurostars Images 209'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 210: Texto alternativo asignado: 'Eurostars Images 210'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 211: Texto alternativo asignado: 'Eurostars Images 211'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 212: Texto alternativo asignado: 'Eurostars Images 212'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 213: Texto alternativo asignado: 'Eurostars Images 213'
+2025-04-02 10:25:58,551 - INFO - Página 1, Imagen 214: Texto alternativo asignado: 'Eurostars Images 214'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 215: Texto alternativo asignado: 'Eurostars Images 215'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 216: Texto alternativo asignado: 'Eurostars Images 216'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 217: Texto alternativo asignado: 'Eurostars Images 217'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 218: Texto alternativo asignado: 'Eurostars Images 218'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 219: Texto alternativo asignado: 'Eurostars Images 219'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 220: Texto alternativo asignado: 'Eurostars Images 220'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 221: Texto alternativo asignado: 'Eurostars Images 221'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 222: Texto alternativo asignado: 'Eurostars Images 222'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 223: Texto alternativo asignado: 'Eurostars Images 223'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 224: Texto alternativo asignado: 'Eurostars Images 224'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 225: Texto alternativo asignado: 'Eurostars Images 225'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 226: Texto alternativo asignado: 'Eurostars Images 226'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 227: Texto alternativo asignado: 'Eurostars Images 227'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 228: Texto alternativo asignado: 'Eurostars Images 228'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 229: Texto alternativo asignado: 'Eurostars Images 229'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 230: Texto alternativo asignado: 'Eurostars Images 230'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 231: Texto alternativo asignado: 'Eurostars Images 231'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 232: Texto alternativo asignado: 'Eurostars Images 232'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 233: Texto alternativo asignado: 'Eurostars Images 233'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 234: Texto alternativo asignado: 'Eurostars Images 234'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 235: Texto alternativo asignado: 'Eurostars Images 235'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 236: Texto alternativo asignado: 'Eurostars Images 236'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 237: Texto alternativo asignado: 'Eurostars Images 237'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 238: Texto alternativo asignado: 'Eurostars Images 238'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 239: Texto alternativo asignado: 'Eurostars Images 239'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 240: Texto alternativo asignado: 'Eurostars Images 240'
+2025-04-02 10:25:58,552 - INFO - Página 1, Imagen 241: Texto alternativo asignado: 'Eurostars Images 241'
+2025-04-02 10:25:58,553 - INFO - Página 1, Imagen 242: Texto alternativo asignado: 'Eurostars Images 242'
+2025-04-02 10:25:58,553 - INFO - Página 1, Imagen 243: Texto alternativo asignado: 'Eurostars Images 243'
+2025-04-02 10:25:58,553 - INFO - Página 1, Imagen 244: Texto alternativo asignado: 'Eurostars Images 244'
+2025-04-02 10:25:58,553 - INFO - Página 1, Imagen 245: Texto alternativo asignado: 'Eurostars Images 245'
+2025-04-02 10:25:58,553 - INFO - Página 1, Imagen 246: Texto alternativo asignado: 'Eurostars Images 246'
+2025-04-02 10:25:58,553 - INFO - Página 1, Imagen 247: Texto alternativo asignado: 'Eurostars Images 247'
+2025-04-02 10:25:58,553 - INFO - Página 1, Imagen 248: Texto alternativo asignado: 'Eurostars Images 248'
+2025-04-02 10:36:55,689 - ERROR - Error al etiquetar el PDF C:\Users\RL000056\AppData\Local\Temp\tmp3n12vzxq.pdf: bad allocation
+2025-04-02 10:45:42,325 - INFO - Página 1, Imagen 1: Texto alternativo asignado
+2025-04-02 10:45:42,339 - INFO - Página 1, Imagen 1: Texto alternativo asignado
+2025-04-02 10:45:42,340 - INFO - Página 1, Imagen 2: Texto alternativo asignado
+2025-04-02 10:45:42,341 - INFO - Página 1, Imagen 2: Texto alternativo asignado
+2025-04-02 10:45:42,342 - INFO - Página 2, Imagen 1: Texto alternativo asignado
+2025-04-02 10:45:42,342 - INFO - Página 1, Imagen 3: Texto alternativo asignado
+2025-04-02 10:45:42,344 - INFO - Página 2, Imagen 2: Texto alternativo asignado
+2025-04-02 10:45:42,345 - INFO - Página 1, Imagen 4: Texto alternativo asignado
+2025-04-02 10:45:42,346 - INFO - Página 2, Imagen 3: Texto alternativo asignado
+2025-04-02 10:45:42,364 - INFO - Página 1, Imagen 5: Texto alternativo asignado
+2025-04-02 10:45:42,367 - INFO - Página 2, Imagen 4: Texto alternativo asignado
+2025-04-02 10:45:42,370 - INFO - Página 3, Imagen 1: Texto alternativo asignado
+2025-04-02 11:26:04,552 - ERROR - Error en pdfs\carta.pdf: name 'add_alt_text_to_images' is not defined
+2025-04-02 11:27:36,452 - ERROR - Error en pdfs\carta.pdf: name 'add_alt_text_to_images' is not defined
+2025-04-02 11:28:39,664 - ERROR - Error en pdfs\carta.pdf: name 'tag_objects_in_pdf' is not defined
+2025-04-02 11:30:41,241 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 11:30:41,246 - ERROR - Error en pdfs\carta.pdf: name 'tag_objects_in_pdf' is not defined
+2025-04-02 11:30:48,044 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 11:30:48,048 - ERROR - Error en pdfs\carta.pdf: name 'add_alt_text_to_images' is not defined
+2025-04-02 11:32:20,436 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 11:32:20,441 - ERROR - Error en pdfs\carta.pdf: name 'add_alt_text_to_images' is not defined
+2025-04-02 11:35:14,840 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 11:35:14,846 - ERROR - Error en pdfs\carta.pdf: name 'add_alt_text_to_images' is not defined
+2025-04-02 11:36:56,495 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 11:36:56,516 - INFO - Procesado correctamente: pdfs\carta.pdf
+2025-04-02 11:39:15,091 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 11:39:15,128 - ERROR - Error etiquetando objetos: 'pikepdf._core.Pdf' object has no attribute 'root'
+2025-04-02 11:39:15,129 - ERROR - Error etiquetando objetos en C:\Users\RL000056\AppData\Local\Temp\tmp9dhqhs5_.pdf
+2025-04-02 11:39:26,895 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 11:39:26,904 - ERROR - Error etiquetando objetos: 'pikepdf._core.Pdf' object has no attribute 'root'
+2025-04-02 11:39:26,905 - ERROR - Error etiquetando objetos en pdfs\carta.pdf
+2025-04-02 11:48:35,703 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 11:48:35,755 - WARNING - El PDF es escaneado y no se puede procesar: pdfs\carta.pdf
+2025-04-02 11:48:56,737 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 11:48:56,781 - WARNING - El PDF es escaneado y no se puede procesar: pdfs\carta.pdf
+2025-04-02 11:53:48,196 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 11:53:48,237 - WARNING - El PDF es escaneado. Aplicando OCR: pdfs\carta.pdf
+2025-04-02 11:53:49,951 - INFO - Texto extraído del PDF escaneado: _ENTRANTES
+
+Crema de calabaza, coco, jengibre 1e
+y pipas de calabaza
+
+Parrillada de verduras de temp...
+2025-04-02 12:04:18,800 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:04:18,835 - WARNING - El PDF es escaneado. Aplicando OCR: pdfs\carta.pdf
+2025-04-02 12:04:20,246 - INFO - Texto extraído del PDF escaneado: _ENTRANTES
+
+Crema de calabaza, coco, jengibre 1e
+y pipas de calabaza
+
+Parrillada de verduras de temp...
+2025-04-02 12:05:28,800 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:05:28,836 - WARNING - El PDF es escaneado. Aplicando OCR: pdfs\carta.pdf
+2025-04-02 12:05:30,246 - INFO - Texto extraído del PDF escaneado: _ENTRANTES
+
+Crema de calabaza, coco, jengibre 1e
+y pipas de calabaza
+
+Parrillada de verduras de temp...
+2025-04-02 12:07:22,616 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:07:22,652 - WARNING - El PDF es escaneado. Aplicando OCR: pdfs\carta.pdf
+2025-04-02 12:07:24,012 - INFO - Texto extraído del PDF escaneado: _ENTRANTES
+
+Crema de calabaza, coco, jengibre 1e
+y pipas de calabaza
+
+Parrillada de verduras de temp...
+2025-04-02 12:10:40,584 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:10:40,616 - WARNING - El PDF es escaneado. Aplicando OCR: pdfs\carta.pdf
+2025-04-02 12:10:42,003 - INFO - Texto extraído del PDF escaneado: _ENTRANTES
+
+Crema de calabaza, coco, jengibre 1e
+y pipas de calabaza
+
+Parrillada de verduras de temp...
+2025-04-02 12:11:06,084 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:11:06,117 - WARNING - El PDF es escaneado. Aplicando OCR: pdfs\carta.pdf
+2025-04-02 12:11:07,511 - INFO - Texto extraído del PDF escaneado: _ENTRANTES
+
+Crema de calabaza, coco, jengibre 1e
+y pipas de calabaza
+
+Parrillada de verduras de temp...
+2025-04-02 12:11:19,611 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:11:19,643 - WARNING - El PDF es escaneado. Aplicando OCR: pdfs\carta.pdf
+2025-04-02 12:11:21,000 - INFO - Texto extraído del PDF escaneado: _ENTRANTES
+
+Crema de calabaza, coco, jengibre 1e
+y pipas de calabaza
+
+Parrillada de verduras de temp...
+2025-04-02 12:13:50,846 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:13:50,883 - WARNING - El PDF es escaneado. Aplicando OCR: pdfs\carta.pdf
+2025-04-02 12:13:52,281 - INFO - Texto extraído del PDF escaneado: _ENTRANTES
+
+Crema de calabaza, coco, jengibre 1e
+y pipas de calabaza
+
+Parrillada de verduras de temp...
+2025-04-02 12:19:41,145 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:19:41,178 - WARNING - El PDF es escaneado. Aplicando OCR: pdfs\carta.pdf
+2025-04-02 12:19:42,496 - INFO - Texto extraído del PDF escaneado: _ENTRANTES
+
+Crema de calabaza, coco, jengibre 1e
+y pipas de calabaza
+
+Parrillada de verduras de temp...
+2025-04-02 12:25:58,004 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:25:58,048 - WARNING - El PDF es escaneado. Aplicando OCR: pdfs\carta.pdf
+2025-04-02 12:25:59,364 - INFO - Creando un nuevo PDF accesible a partir del texto extraído...
+2025-04-02 12:25:59,393 - INFO - Nuevo PDF accesible guardado en: pdfs_accesibles\carta.pdf
+2025-04-02 12:25:59,394 - INFO - PDF accesible creado y guardado en: pdfs_accesibles\carta.pdf
+2025-04-02 12:31:14,722 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:31:14,764 - WARNING - El PDF es escaneado. Agregando etiquetas de accesibilidad: pdfs\carta.pdf
+2025-04-02 12:31:14,801 - INFO - PDF accesible guardado en: pdfs_accesibles\carta.pdf
+2025-04-02 12:31:14,802 - INFO - PDF accesible creado y guardado en: pdfs_accesibles\carta.pdf
+2025-04-02 12:35:22,324 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:35:22,361 - WARNING - El PDF es escaneado. Agregando etiquetas de accesibilidad: pdfs\carta.pdf
+2025-04-02 12:35:22,378 - INFO - PDF accesible guardado en: pdfs_accesibles\carta.pdf
+2025-04-02 12:35:22,379 - INFO - PDF accesible creado y guardado en: pdfs_accesibles\carta.pdf
+2025-04-02 12:35:59,697 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:35:59,728 - WARNING - El PDF es escaneado. Agregando etiquetas de accesibilidad: pdfs\carta.pdf
+2025-04-02 12:35:59,736 - INFO - PDF accesible guardado en: pdfs_accesibles\carta.pdf
+2025-04-02 12:35:59,737 - INFO - PDF accesible creado y guardado en: pdfs_accesibles\carta.pdf
+2025-04-02 12:38:32,512 - INFO - Procesando: pdfs\carta.pdf
+2025-04-02 12:38:32,544 - WARNING - El PDF es escaneado. Agregando etiquetas de accesibilidad: pdfs\carta.pdf
+2025-04-02 12:38:32,567 - INFO - PDF accesible guardado en: pdfs_accesibles\carta.pdf
+2025-04-02 12:38:32,568 - INFO - PDF accesible creado y guardado en: pdfs_accesibles\carta.pdf
+2025-04-03 09:38:17,829 - ERROR - Error al etiquetar el PDF C:\Users\RL000056\AppData\Local\Temp\tmpxwapxz59.pdf: bad allocation
